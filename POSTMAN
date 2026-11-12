@@ -1,0 +1,598 @@
+{
+  "info": {
+    "_postman_id": "a0275a12-db6c-4e28-ac20-f6ea70fa56ea",
+    "name": "DISTR-AD01-ComercioMultibodega-URLs-Completas",
+    "description": "Colección completa con URLs directas y cuerpos JSON explícitos listos para probar sin configurar variables adicionales.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57528362",
+    "_collection_link": "https://go.postman.co/collection/57528362-a0275a12-db6c-4e28-ac20-f6ea70fa56ea?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "1. Catalogo.Api (Puerto 5204)",
+      "item": [
+        {
+          "name": "Categorias - Obtener Todas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Categorias",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5204",
+              "path": [
+                "api",
+                "Categorias"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Categorias - Obtener por Id (1)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Categorias/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5204",
+              "path": [
+                "api",
+                "Categorias",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Categorias - Crear Categoria",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Computadoras\",\n  \"descripcion\": \"Equipos portatiles y de escritorio\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5204/api/Categorias",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5204",
+              "path": [
+                "api",
+                "Categorias"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Marcas - Obtener Todas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Marcas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5204",
+              "path": [
+                "api",
+                "Marcas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Marcas - Obtener por Id (1)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Marcas/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5204",
+              "path": [
+                "api",
+                "Marcas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Marcas - Crear Marca",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Dell\",\n  \"paisOrigen\": \"Estados Unidos\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5204/api/Marcas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5204",
+              "path": [
+                "api",
+                "Marcas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Productos - Obtener Todos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Productos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5204",
+              "path": [
+                "api",
+                "Productos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Productos - Obtener por Id (1)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Productos/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5204",
+              "path": [
+                "api",
+                "Productos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Productos - Crear Producto",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idCategoria\": 1,\n  \"idMarca\": 1,\n  \"nombre\": \"Dell Latitude 5420 16GB\",\n  \"sku\": \"DELL-LAT-5420\",\n  \"precio\": 850.00,\n  \"estado\": true\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5204/api/Productos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5204",
+              "path": [
+                "api",
+                "Productos"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "2. Inventario.Api (Puerto 5117)",
+      "item": [
+        {
+          "name": "Bodegas - Obtener Todas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5117/api/Bodegas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5117",
+              "path": [
+                "api",
+                "Bodegas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Bodegas - Obtener por Id (1)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5117/api/Bodegas/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5117",
+              "path": [
+                "api",
+                "Bodegas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Bodegas - Crear Bodega",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Bodega Matriz Quito Norte\",\n  \"ciudad\": \"Quito\",\n  \"direccion\": \"Av. Galo Plaza Lasso y Cap. Borja\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5117/api/Bodegas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5117",
+              "path": [
+                "api",
+                "Bodegas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Existencias - Obtener Todas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5117/api/Existencias",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5117",
+              "path": [
+                "api",
+                "Existencias"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Existencias - Consultar por Producto (1)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5117/api/Existencias/por-producto/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5117",
+              "path": [
+                "api",
+                "Existencias",
+                "por-producto",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Existencias - Registrar/Crear Existencia",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idProducto\": 1,\n  \"idBodega\": 1,\n  \"stock\": 45\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5117/api/Existencias",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5117",
+              "path": [
+                "api",
+                "Existencias"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Movimientos - Registrar Ingreso",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idProducto\": 1,\n  \"idBodega\": 1,\n  \"tipo\": \"Ingreso\",\n  \"cantidad\": 45,\n  \"fecha\": \"2026-11-11T10:00:00Z\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5117/api/Movimientos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5117",
+              "path": [
+                "api",
+                "Movimientos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Reservas - Crear Reserva",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idProducto\": 1,\n  \"idBodega\": 1,\n  \"cantidad\": 5,\n  \"estado\": \"Pendiente\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5117/api/Reservas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5117",
+              "path": [
+                "api",
+                "Reservas"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "3. Pedidos.Api (Puerto 5279)",
+      "item": [
+        {
+          "name": "Clientes - Obtener Todos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5279/api/Clientes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5279",
+              "path": [
+                "api",
+                "Clientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Clientes - Obtener por Id (1)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5279/api/Clientes/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5279",
+              "path": [
+                "api",
+                "Clientes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Clientes - Crear Cliente",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombres\": \"David Simba\",\n  \"cedula\": \"1724567890\",\n  \"correo\": \"david.simba@cordillera.edu.ec\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5279/api/Clientes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5279",
+              "path": [
+                "api",
+                "Clientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Pedidos - Obtener Todos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5279/api/Pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5279",
+              "path": [
+                "api",
+                "Pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Pedidos - Obtener Pedido por Id (1)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5279/api/Pedidos/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5279",
+              "path": [
+                "api",
+                "Pedidos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Pedidos - Crear Pedido",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idCliente\": 1,\n  \"fecha\": \"2026-11-11T10:45:00Z\",\n  \"total\": 850.00,\n  \"estado\": \"Pendiente\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5279/api/Pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5279",
+              "path": [
+                "api",
+                "Pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Pedidos - Consulta Cruzada con Catalogo e Inventario",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5279/api/Pedidos/1/con-catalogo-inventario",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5279",
+              "path": [
+                "api",
+                "Pedidos",
+                "1",
+                "con-catalogo-inventario"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
